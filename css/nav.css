@@ -106,6 +106,13 @@ figure {
 }
 
 @media (max-width: 800px) {
+  .menu__item {
+    list-style: none;
+    position: relative;
+    height: 100%;
+  }
+  .menu__item:hover {
+  }
   .menu__hamburguer {
     display: flex;
   }
@@ -121,6 +128,53 @@ figure {
     display: grid;
     grid-auto-rows: max-content;
     /*transform: translateX(100%);*/
+  }
+
+  .menu__link,
+  .menu__nombre {
+    padding: 25px 0;
+    padding-left: 30px;
+    height: auto;
+  }
+
+  .menu__arrow {
+    transform: rotate(0);
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .menu__nesting {
+    display: grid;
+    position: unset;
+    width: 100%;
+    transform: translateY(0);
+    transition: height 0.3;
+  }
+
+  .menu__item {
+  }
+
+  /* Efecto para aparacer y desaparecer enlaces */
+  .menu__nesting {
+    height: 0;
+    /*overflow: hidden*/
+  }
+  .hola {
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(-180deg);
+  }
+  .view {
+    width: inherit;
+    height: 204px;
+  }
+
+  .menu__90 {
+    transform: rotate(-180deg);
+  }
+  .menu__link--inside {
+    width: 90%;
+    margin-left: auto;
+    border-left: 1px solid #798499;
   }
   /*.menu__hamburguer {
     display: flex;
