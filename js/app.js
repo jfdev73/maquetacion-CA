@@ -1,7 +1,11 @@
+(function(){
+
 const opcion = document.querySelectorAll('.menu__item--show');
 const prueba = document.querySelectorAll('.prueba');
 const h = document.querySelector('.menu__nesting');
 const flecha = document.querySelector('.menu__arrow');
+const list = document.querySelector('.menu__links');
+const menu = document.querySelector('.menu__hamburguer')
 console.log("esta es: ",h);
 console.log("opcion",{opcion});
 
@@ -18,8 +22,11 @@ opcion.forEach(e => {
         console.log("segundo hijo", padre.children[1]);
         padre.parentNode.children[1].classList.toggle('hola');
         h.classList.toggle('view');
-        flecha.classList.toggle('menu__90')
+        flecha.classList.toggle('menu__90');
     });
 
 
 });
+menu.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));
+
+})();

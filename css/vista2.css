@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-nav {
-  height: 60px;
-  background: crimson;
-}
-
 h1 {
   text-align: center;
   width: 90%;
@@ -18,7 +13,12 @@ h1 {
 .label__read {
   /*display: block;*/
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin: 7px auto;
+}
+.label__opc {
+  display: block;
+  text-transform: initial;
+  margin: 20px auto;
 }
 .servidor_publico {
   text-transform: uppercase;
@@ -53,7 +53,6 @@ h1 {
 }
 
 .puntualidad__img {
-  width: 100%;
 }
 
 .form__incidencias label {
@@ -103,6 +102,22 @@ textarea {
 .form__container {
   padding-top: 0;
   margin-top: 50px;
+}
+/**select options**/
+.not__view {
+  display: none;
+}
+.txt_not {
+  display: none;
+}
+
+.text__view {
+  display: unset;
+}
+
+.otros,
+.file {
+  margin-top: 20px;
 }
 
 @media (max-width: 750px) {
