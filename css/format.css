@@ -12,10 +12,10 @@ body {
 
 .button {
   margin-top: 10px;
-  background-color: #9333e2; /* Green */
+  background-color: #b16aec; /* Green */
   border: none;
   color: white;
-  padding: 6px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -24,4 +24,5 @@ body {
   border-radius: 5px;
   cursor: pointer;
   float: right;
+  width: 6em;
 }
